@@ -12,4 +12,4 @@ class keyModel {
   }
 }
 
-module.exports = {keyModel};
+module.exports = keyModel;

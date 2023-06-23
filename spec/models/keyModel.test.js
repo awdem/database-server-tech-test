@@ -1,4 +1,4 @@
-const {keyModel} = require('../../models/keyModel');
+const keyModel = require('../../models/keyModel');
 
 
 describe('KeyModel class', () => {
