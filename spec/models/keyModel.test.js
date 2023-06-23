@@ -13,6 +13,12 @@ describe('KeyModel class', () => {
     expect(model).toHaveProperty('storedPair', {});
   })
 
+  describe('#getStoredPair', () => {
+    it('returns the stored pair', () => {
+      expect(model.getStoredPair()).toEqual({});
+    })
+  })
+
   describe('#setStoredPair', () => {
     test('given a key-value pair, it sets dbPair to it', () => {
       keyValuePair = {
@@ -21,7 +27,10 @@ describe('KeyModel class', () => {
 
       model.setStoredPair(keyValuePair);
 
-      expect(model.storedPair).toEqual(keyValuePair);
+      expect(model.getStoredPair()).toEqual(keyValuePair);
     })
   })
+
+  // future edge cases
+
 });

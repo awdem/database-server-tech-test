@@ -6,6 +6,10 @@ class keyModel {
   setStoredPair(keyValuePair) {
     this.storedPair = keyValuePair;
   }
+
+  getStoredPair() {
+    return this.storedPair;
+  }
 }
 
 module.exports = {keyModel};
