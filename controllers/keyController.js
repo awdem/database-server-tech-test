@@ -1,8 +1,9 @@
-const Key = require('../models/keyModel');
+const KeyModel = require('../models/keyModel');
+
 
 const KeyController = {
-  storePair: () => {
-    // placeholder
+  storePair: (req, res) => {
+    res.status(201).json({message: 'OK'});
   },
 }
 
